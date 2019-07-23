@@ -15,4 +15,10 @@ public class CalculatorController {
 	public double addition(@RequestParam double first, @RequestParam double second) {
 		return first + second;
 	}
+	
+	@GetMapping("multiplication")
+	@ResponseBody
+	public double multiplication(@RequestParam double first, @RequestParam double second) {
+		return first * second;
+	}
 }
